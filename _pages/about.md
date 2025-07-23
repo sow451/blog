@@ -8,11 +8,13 @@ permalink: /about/
 
  [LinkedIn](https://www.linkedin.com/in/legaljargon/) | [Twitter](https://twitter.com/sowmyarao_) or you can email me: contactsowmyarao at gmail dot com |
 
-My name is Sowmya. I specialize in building regulated fintech products from concept to launch, and move them to the growth phase. I'm a fintech (payments API) founder from the batch of YC W20. 1x exit💰. Aspiring murder-mystery writer. I like reading SFF. I build JS games for little kids to learn maths and spellings. Parenting 2 👦, 1 🐶 and living in Bangalore, India.  
+My name is Sowmya. I specialize in building regulated fintech products from concept to launch, and moving them to the growth phase (0-$10m USD revenue). I'm a fintech (payments API) founder from the batch of YC W20. 1x exit💰. Aspiring murder-mystery writer. I like reading SFF. I build JS games for little kids to learn maths and spellings. Parenting 2 👦, 1 🐶 and living in Bangalore, India.  
 
 ## **My CV**
 
-Fintech/payments GM. Ex-founder (YCW20), sold payments API startup to a US Series C SaaS company for single-digit $ mn cash + stock in 2022. All early employees and both co-founders received cash + stock payouts.
+Head of Product for credit infra startup (Credit Saison Aumnee) in India - handling 4 product lines and a 10 member team building complex securitization, co-lending, private fund OS and LOS/LMS. 
+
+Previously, fintech/payments GM handling product and P&L. Ex-founder (YCW20), sold payments API startup to a US Series C SaaS company for single-digit $ mn cash + stock in 2022. All early employees and both co-founders received cash + stock payouts.
 
 Over 18 months at my acquirer, I led these workflows:
 - Integrated ACH payments into acquirer's POS
@@ -24,14 +26,20 @@ Over 18 months at my acquirer, I led these workflows:
 ---
 
 ## **Skills**
+- Technical AI Builder
 - Product Management
-- Payment Operations (KYC, compliance, filings)
+- Payment Operations (KYC, compliance, filings, LOS, LMS)
 - Growth and Partnerships (early-stage)
 - Fintech Strategy (US/India)
 - Risk and Regulatory Analysis
 ---
 
 ## **Employment History**
+
+### Head of Product: Credit Saison Aumnee
+Jan 2025 – current
+- I lead the product team at Credit Saison Aumnee - a tech startup founded by the Japanese financial giant - Credit Saison. I strategise and lead the building of 4 distinct product lines of credit infrastructure (wholesale and retail). Under my leadership, we have launched a private fund management infra play, scaled the best co-lending and securitization product in India, and made strong MVP bets on LOS/LMS for secured asset classes. I lead a team of 12 - across product management, product design, and implementations/onboarding.  
+
 
 ### Product Consultancy: Stealth Services Venture Studio
 August 2024 – November 24
