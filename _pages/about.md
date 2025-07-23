@@ -8,7 +8,7 @@ permalink: /about/
 
  [LinkedIn](https://www.linkedin.com/in/legaljargon/) | [Twitter](https://twitter.com/sowmyarao_) or you can email me: contactsowmyarao at gmail dot com |
 
-My name is Sowmya. I specialize in building regulated fintech products from concept to launch, and moving them to the growth phase (0-$10m USD revenue). I'm a fintech (payments API) founder from the batch of YC W20. 1x exit💰. Aspiring murder-mystery writer. I like reading SFF. I build JS games for little kids to learn maths and spellings. Parenting 2 👦, 1 🐶 and living in Bangalore, India.  
+My name is Sowmya. I specialize in building regulated fintech products from concept to launch, and moving them to the growth phase (0-$10m USD revenue). Fintech nerd who knows the nuts and bolts of payments and credit. YC founder (YC W20) w 1x exit💰. Aspiring murder-mystery writer. I like reading SFF. I build JS games for little kids to learn maths and spellings. Parenting 2 👦, 1 🐶 and living in Bangalore, India.  
 
 ## **My CV**
 
