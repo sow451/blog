@@ -12,7 +12,7 @@ My name is Sowmya. I specialize in building regulated fintech products from conc
 
 ## **My CV**
 
-Head of Product for credit infra startup (Credit Saison Aumnee) in India - handling 4 product lines and a 10 member team building complex securitization, co-lending, private fund OS and LOS/LMS. 
+Head of Product at a leading credit infra startup (Credit Saison Aumnee) in India - handling 4 product lines and a 10 member team building complex securitization, co-lending, AI enabled private fund OS and LOS/LMS. 
 
 Previously, fintech/payments GM handling product and P&L. Ex-founder (YCW20), sold payments API startup to a US Series C SaaS company for single-digit $ mn cash + stock in 2022. All early employees and both co-founders received cash + stock payouts.
 
@@ -31,7 +31,7 @@ Over 18 months at my acquirer, I led these workflows:
 - Payment Operations (KYC, compliance, filings, LOS, LMS)
 - Growth and Partnerships (early-stage)
 - Fintech Strategy (US/India)
-- Risk and Regulatory Analysis
+
 ---
 
 ## **Employment History**
