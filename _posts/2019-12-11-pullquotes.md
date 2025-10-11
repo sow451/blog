@@ -1,14 +1,35 @@
 ---
 layout: post
-title:  Pullquotes
-categories: [HTML,Code]
-excerpt: In graphic design, a pull quote (also known as a lift-out pull quote) is a key phrase, quotation, or excerpt that has been pulled from an article and used as a page layout graphic element, serving to entice readers into the article or to highlight a key topic.
+title:  GFF + A harmless "overheard at" website for your conference - [Build w AI]
+categories: [Build w AI,sideproject, conference]
+excerpt: I went to GFF, and in preparation - this weekend, I built a tiny app I’ve wanted at every slightly stuffy and formal conference I've ever attended. It's a lightweight, anonymous message board for the funny, weird and bitchy things people say in hallways. I call it "Overheard At". Check it out!
 ---
 
-In graphic design, a pull quote (also known as a lift-out pull quote) is a key phrase, quotation, or excerpt that has been pulled from an article and used as a page layout graphic element, serving to entice readers into the article or to highlight a key topic. {% include pullquote.html quote="It is typically placed in a larger or distinctive typeface and on the same page." %} Pull quotes are often used in magazine and newspaper articles, annual reports, and brochures, as well as on the web. They can add visual interest to text-heavy pages with few images or illustrations.
+This week I attended GFF 2025 - which, in case you haven't heard of it - is like India's largest fintech conference. It takes place once a year, and pulls the attendance of who's who of fintech, finservices and well... anyone who's involved with touching money in anyway in India.
 
-Placement of a pull quote on a page may be defined in a publication's or website's style guide. Such a typographic device may or may not be aligned with a column on the page. Some designers, for example, choose not to align the quote. In that case, the quotation cuts into two or more columns, as in the example shown. Because the pull quote invites the reader to read about the highlighted material, the pull quote should appear before the text it cites and, generally, fairly close to it.
+I'll shortly write a note about what I actually learnt from my time at GFF, but before that I wanted to share a side project I worked on over this weekend. 
 
-Pull quotes need not be a verbatim copy of the text being quoted; depending on a publication's house style, pull quotes may be abbreviated for space or paraphrased for clarity, with or without indication.
+Build w AI is my attempt at building clean, functional products in a week/weekend using AI. As a Product Leader I'm constantly experimenting with new tools that can help me learn and ship faster - and I put that into practice w real-world building. I'm hoping to inspire other builders, especially those from a non-technical background, read and understand how they can go from idea → prototype → production without the fuss and hyperbole. I used AI to write this paragraph and it sounds hopelessly tone-deaf but well, it got the point across?
 
-A disadvantage of pull quotes as a design element is that they can disrupt the reading process of readers invested in reading the text sequentially by drawing attention to ghost fragments out of context. At the other extreme, when pull quotes are used to break up what would otherwise be a formless wall of text, pull quote can serve as visual landmarks to help the reader maintain a sense of sequence and place.
+
+Anyway, this weekend, I built a tiny app I’ve wanted at every slightly stuffy and formal conference I've ever attended: a lightweight, anonymous message board for the funny, or just plain weird things people say in hallways. I call it Overheard At!. And for the conference I've just come from - its been productionized as 'Overheard at GFF'. It’s intentionally simple: a single feed, an “Add” modal, and quick sort controls so you can browse the newest/ oldest posts. No login, no profiles, no my grandmother told me a story type intro. 
+
+## What it does
+
+Let's a user post anonymously using a 3 input modal with a 320-character limit. . 
+No moderation by a human, some content moderation in the posting. 
+Upon successful posting, you can see your message on the feed instantly. A refresh button pulls the latest; new posts show up at the top.
+Like/dislike exists - but doesn't get "saved" - bug to be fixed for later.
+Mobile-first/friendly.
+One page, clean spacing.
+  
+  Screenshots here: 
+
+
+
+
+
+  Video of a post here: 
+
+
+
