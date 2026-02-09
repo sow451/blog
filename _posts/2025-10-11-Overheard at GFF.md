@@ -10,8 +10,6 @@ excerpt: I went to GFF, and in preparation - this weekend, I built a tiny app Iâ
 This week I attended GFF 2025 - which, in case you haven't heard of it - is like India's largest fintech conference. It takes place once a year, and pulls the attendance of who's who of fintech, finservices and well... anyone who's involved with touching money in anyway in India.
 
 I'll shortly write a note about what I actually learnt from my time at GFF, but before that I wanted to share a side project I worked on over this weekend. 
-
-_Build w AI is my attempt at building clean, functional products in a week/weekend using AI. I'm hoping to inspire other builders, especially those from a non-technical background to understand how they can go from idea - prototype - prod without fuss._
  
  psst: I used AI to write this paragraph and it sounds hopelessly tone-deaf but well, it got the point across?
 

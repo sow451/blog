@@ -1,0 +1,43 @@
+{% assign project = include.project %}
+{% assign has_detail = false %}
+{% if project.note or project.link %}
+  {% assign has_detail = true %}
+{% endif %}
+<article class="project-card" data-project>
+  <div class="project-card-top">
+    <div class="project-meta">
+      {% if project.year %}<span>{{ project.year }}</span>{% endif %}
+      {% if project.status %}
+        {% if project.year %}<span class="project-meta-dot">·</span>{% endif %}
+        <span>{{ project.status }}</span>
+      {% endif %}
+    </div>
+    {% if has_detail %}
+      <button class="project-info-toggle" type="button" aria-expanded="false" aria-controls="project-detail-card-{{ include.id }}" aria-label="Show project details">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+    {% endif %}
+  </div>
+  <h2 class="project-title">
+    {% if project.link %}
+      <a href="{{ project.link }}" target="_blank" rel="noopener">{{ project.title }}</a>
+    {% else %}
+      {{ project.title }}
+    {% endif %}
+  </h2>
+  {% if has_detail %}
+    {% include project-preview.html note=project.note link=project.link truncate=120 %}
+  {% endif %}
+  {% if has_detail %}
+    <div class="project-detail" id="project-detail-card-{{ include.id }}">
+      {% if project.note %}
+        <p class="project-detail-text">{{ project.note }}</p>
+      {% endif %}
+      {% if project.link %}
+        <a class="project-detail-link" href="{{ project.link }}" target="_blank" rel="noopener">View project</a>
+      {% endif %}
+    </div>
+  {% endif %}
+</article>

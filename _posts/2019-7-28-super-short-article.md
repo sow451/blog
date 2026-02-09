@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Some articles are just so short that we've to make the footer stick
+title: Essays for February 26 that made me think deeply
 categories: Miscellaneous
 ---
 

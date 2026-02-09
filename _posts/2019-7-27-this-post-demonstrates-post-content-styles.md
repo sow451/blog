@@ -1,6 +1,6 @@
 ---
 layout: post
-title: This post demonstrates post content styles
+title: 5 health/fitness products I'm loving
 categories: Miscellaneous
 ---
 

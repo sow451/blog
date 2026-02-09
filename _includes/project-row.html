@@ -1,0 +1,24 @@
+{% assign project = include.project %}
+<div class="project-row" data-project>
+  <span class="project-row-meta">
+    {% if project.year %}{{ project.year }}{% endif %}
+    {% if project.status %}
+      {% if project.year %} · {% endif %}
+      {{ project.status }}
+    {% endif %}
+  </span>
+  <div class="project-row-body">
+    <div class="project-row-head">
+      <span class="project-row-title">
+        {% if project.link %}
+          <a href="{{ project.link }}" target="_blank" rel="noopener">{{ project.title }}</a>
+        {% else %}
+          {{ project.title }}
+        {% endif %}
+      </span>
+    </div>
+    {% if project.note or project.link %}
+      {% include project-preview.html note=project.note link=project.link truncate=140 %}
+    {% endif %}
+  </div>
+</div>

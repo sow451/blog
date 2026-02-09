@@ -1,0 +1,11 @@
+{% assign post = include.post %}
+{% assign clean_excerpt = post.excerpt | strip_html | strip_newlines | replace: '  ', ' ' %}
+{% assign first_sentence = clean_excerpt | split: '.' | first %}
+{% if clean_excerpt contains '.' %}
+  {% assign first_sentence = first_sentence | append: '.' %}
+{% endif %}
+<a class="post-row" href="{{ site.baseurl }}{{ post.url }}">
+  <span class="post-row-date">{{ post.date | date: "%B %e, %Y" }}</span>
+  <span class="post-row-title">{{ post.title }}</span>
+  <span class="post-row-excerpt">{{ first_sentence }}</span>
+</a>
