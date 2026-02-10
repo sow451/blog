@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Book Review - Memetics
+title:  Books I read - Jan 2026 - Memetics, Ascension, Extremity,
 categories: [HTML,Code]
 ---
 

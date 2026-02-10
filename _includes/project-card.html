@@ -1,6 +1,10 @@
 {% assign project = include.project %}
+{% assign project_url = nil %}
+{% if project.url %}
+  {% assign project_url = project.url | relative_url %}
+{% endif %}
 {% assign has_detail = false %}
-{% if project.note or project.link %}
+{% if project.note or project.link or project_url %}
   {% assign has_detail = true %}
 {% endif %}
 <article class="project-card" data-project>
@@ -21,22 +25,31 @@
     {% endif %}
   </div>
   <h2 class="project-title">
-    {% if project.link %}
+    {% if project_url %}
+      <a href="{{ project_url }}">{{ project.title }}</a>
+    {% elsif project.link %}
       <a href="{{ project.link }}" target="_blank" rel="noopener">{{ project.title }}</a>
     {% else %}
       {{ project.title }}
     {% endif %}
   </h2>
   {% if has_detail %}
-    {% include project-preview.html note=project.note link=project.link truncate=120 %}
+    {% include project-preview.html note=project.note link=project.link url=project_url truncate=120 %}
   {% endif %}
   {% if has_detail %}
     <div class="project-detail" id="project-detail-card-{{ include.id }}">
       {% if project.note %}
         <p class="project-detail-text">{{ project.note }}</p>
       {% endif %}
-      {% if project.link %}
-        <a class="project-detail-link" href="{{ project.link }}" target="_blank" rel="noopener">View project</a>
+      {% if project_url or project.link %}
+        <div class="project-detail-links">
+          {% if project_url %}
+            <a class="project-detail-link" href="{{ project_url }}">Read more</a>
+          {% endif %}
+          {% if project.link %}
+            <a class="project-detail-link" href="{{ project.link }}" target="_blank" rel="noopener">View project</a>
+          {% endif %}
+        </div>
       {% endif %}
     </div>
   {% endif %}

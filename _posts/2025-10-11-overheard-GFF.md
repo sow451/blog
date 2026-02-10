@@ -1,31 +1,24 @@
 ---
 layout: post
 title:  Overheard at GFF!
-categories: [Build w AI,sideproject, conference]
+categories: [Build w AI, sideproject, conference, Fun]
 excerpt: I went to GFF, and in preparation - this weekend, I built a tiny app I’ve wanted at every slightly stuffy and formal conference I've ever attended. It's a lightweight, anonymous message board for the funny, weird and bitchy things people say in hallways. I call it "Overheard At". Check it out!
+image: /images/posts/2025-10-11-overheard-GFF.md/overheard_at_thumbnail.png
+
 ---
 
+I built an anonymous, public, message board "Overheard At" that can be used in any conference. It encourages sharing of the funny, controversial or just plain weird things people say in hallways. 
 
+First, some background: This week I attended GFF 2025. In case you haven't heard of it - GFF is India's largest fintech conference. It takes place once a year, and pulls the attendance of who's who of fintech, finservices and well... anyone who's involved with touching money in anyway in India.
 
-This week I attended GFF 2025 - which, in case you haven't heard of it - is like India's largest fintech conference. It takes place once a year, and pulls the attendance of who's who of fintech, finservices and well... anyone who's involved with touching money in anyway in India.
+![A website with the title "Overheard at GFF" and some anonymous posts](/images/posts/2025-10-11-overheard-GFF.md/overheard_at_3.png)
 
-I'll shortly write a note about what I actually learnt from my time at GFF, but before that I wanted to share a side project I worked on over this weekend. 
- 
- psst: I used AI to write this paragraph and it sounds hopelessly tone-deaf but well, it got the point across?
-
-
-Anyway, this weekend, I built a tiny app I’ve wanted at every slightly stuffy and formal conference I've ever attended: a lightweight, anonymous message board for the funny, bitchy or just plain weird things people say in hallways. 
-
-I call it Overheard At! And for the conference I've just come from - its been productionized as 'Overheard at GFF'. 
-
-![A website with the title "Overheard at GFF" and some anonymous posts](/images/posts/2025-10-11-Overheard%20at%20GFF/overheard_at_1.png)
-
-![A website with the title "Overheard at GFF" and some anonymous posts](/images/posts/2025-10-11-Overheard%20at%20GFF/overheard_at_3.png)
+Anyway, this weekend, just ahead of GFF, I built a tiny lightweight service I’ve wanted to use at every stuffy and formal conference I've ever attended: an anonymous, public, message board for the funny, controversial or just plain weird things people say in hallways. 
 
 It’s intentionally simple: a single feed-page, an “Add” CTA + Modal, and quick sort controls so you can browse the newest/ oldest posts. No login, no profiles, no my grandmother told me a story type intro for SEO farming. 
 
 <video controls width="100%">
-  <source src="/images/posts/2025-10-11-Overheard at GFF/vid_overheard_at_1.mp4" type="video/mp4">
+  <source src="/images/posts/2025-10-11-overheard-GFF.md/vid_overheard_at_1.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -38,7 +31,7 @@ It’s intentionally simple: a single feed-page, an “Add” CTA + Modal, and q
 5. Mobile-first/friendly.
 6. One page, clean spacing, neat UI (thanks shadcn).
   
-  ![Add posts](/images/posts/2025-10-11-Overheard%20at%20GFF/overheard_at_2.png)
+  ![Add posts](/images/posts/2025-10-11-overheard-GFF.md/overheard_at_2.png)
 
 
 
@@ -77,7 +70,7 @@ There is another Supabase table to store logs for every event: validation failur
 
 This was my first proper deployment, and I ran into multiple build errors that I had to fix using ChatGPT's assistance. Most were ESLint "warnings", that I had to silence/ clear up. 
 
-![Deployment Errors!](/images/posts/2025-10-11-Overheard%20at%20GFF/overheard_at_4.png)
+![Deployment Errors!](/images/posts/2025-10-11-overheard-GFF.md/overheard_at_4.png)
 
 
 ### voila!
@@ -88,5 +81,4 @@ Such a feeling of accomplishment. It was the end of Day 1 of the conference by t
 
 When OverheardAT went out into the world, I honstly assumed I'd hear real juicy goss about revenue metrics and raises (and honestly what was I thinking), there appeared a string of posts about hot girls, hot VCs and the odd crypto bro complaining about forbidden words!. Maybe we'll get the real gossip going next year!
 
-![Here for beer!](/images/posts/2025-10-11-Overheard%20at%20GFF/overheard_at_5.png)
-
+![Here for beer!](/images/posts/2025-10-11-overheard-GFF.md/overheard_at_5.png)

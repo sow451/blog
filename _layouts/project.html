@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<article class="project detailed">
+  <header class="post-hero project-hero">
+    <div class="post-breadcrumb">
+      <a href="{{ site.baseurl }}/">Home</a>
+      <span>/</span>
+      <a href="{{ site.baseurl }}/portfolio/">Portfolio</a>
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.year or page.status %}
+      <div class="post-meta-row">
+        <div class="post-meta-text">
+          {% if page.year %}
+            <span>{{ page.year }}</span>
+          {% endif %}
+          {% if page.status %}
+            {% if page.year %}<span class="post-meta-dot">•</span>{% endif %}
+            <span>{{ page.status }}</span>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+    {% if page.note %}
+      <p class="project-summary">{{ page.note }}</p>
+    {% endif %}
+    {% if page.link or page.preview %}
+      <div class="project-cta-group">
+        {% if page.preview %}
+          <a class="project-cta" href="{{ page.preview }}" target="_blank" rel="noopener">Live preview</a>
+        {% endif %}
+        {% if page.link %}
+          <a class="project-cta project-cta--ghost" href="{{ page.link }}" target="_blank" rel="noopener">View project</a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </header>
+
+  <div class="post-divider"></div>
+
+  <div class="project-content post-content">
+    <div class="entry">
+      {{ content }}
+    </div>
+  </div>
+</article>

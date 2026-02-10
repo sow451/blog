@@ -4,7 +4,7 @@
 //
 
 // Colors
-$blue: #e06a2a;
+$blue: oklch(0.623 0.214 259.815);
 
 // Grays
 $black: #000;
@@ -12,7 +12,7 @@ $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
-$white: #fff;
+$white: oklch(1 0 0);
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;

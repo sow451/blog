@@ -16,15 +16,24 @@
 
 :root {
   --font-sans: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --background: oklch(1 0 0);
+  --primary: oklch(0.623 0.214 259.815);
+  --surface-1: #ffffff;
+  --surface-2: #fafafa;
+  --surface-3: #f5f5f5;
+  --border-soft: #efefef;
 }
 
 html {
   font-size: 100%;
   height: 100%;
+  background: #ffffff;
+  background: var(--background);
 }
 
 body {
-  background: $white;
+  background: #ffffff;
+  background: var(--background);
   font-family: var(--font-sans);
   font-optical-sizing: auto;
   font-weight: 400;
@@ -154,7 +163,7 @@ table tr td :last-child {
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 18px;
-  background-color: #fff3ff;
+  background-color: var(--surface-1);
 }
 
 .share-box {
@@ -183,11 +192,14 @@ span[data-pullquote]:before {
 }
 
 a {
+  color: #2563eb;
   color: $blue;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
+    color: #2563eb;
     color: $blue;
+    text-decoration: underline;
   }
 }
 
@@ -289,7 +301,7 @@ p > img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid #ebe7de;
+  border-bottom: 1px solid var(--border-soft);
 
   @include mobile {
     text-align: center;
@@ -369,13 +381,15 @@ nav {
 
   a {
     margin-left: 20px;
-    color: #5b554b;
+    color: #2563eb;
+    color: $blue;
     text-align: right;
     font-weight: 500;
     letter-spacing: -0.005em;
 
     @include mobile {
       margin: 0 10px;
+      color: #2563eb;
       color: $blue;
     }
   }
@@ -400,7 +414,7 @@ nav {
   height: 34px;
   padding: 0;
   border-radius: 999px;
-  background: #f5f5f5;
+  background: var(--surface-1);
   color: #3a342b;
   font-size: 14px;
   font-weight: 600;
@@ -409,7 +423,7 @@ nav {
 
 .nav-search:hover,
 .nav-search:focus-visible {
-  background: #ededed;
+  background: var(--surface-2);
   color: #2f2a23;
   text-decoration: none;
 }
@@ -528,7 +542,7 @@ nav {
   display: inline-block;
   padding: 6px 14px;
   border-radius: 999px;
-  background: #f5f5f5;
+  background: var(--surface-1);
   color: #6b655a;
   font-size: 12px;
   font-weight: 600;
@@ -597,7 +611,7 @@ nav {
   height: 160px;
   border-radius: 18px;
   overflow: hidden;
-  background: #f5f5f5;
+  background: var(--surface-2);
 }
 
 .post-card-media img {
@@ -617,7 +631,7 @@ nav {
   font-size: 42px;
   font-weight: 700;
   color: #4b463c;
-  background: #f0f0f0;
+  background: var(--surface-2);
 }
 
 .post-card-content {
@@ -644,14 +658,14 @@ nav {
 .post-tag {
   padding: 4px 10px;
   border-radius: 999px;
-  background: #f5f5f5;
+  background: var(--surface-1);
   color: #6a645a;
   font-size: 12px;
   font-weight: 600;
 }
 
 .post-tag--light {
-  background: #fafafa;
+  background: var(--surface-2);
   color: #756f65;
   font-weight: 500;
 }
@@ -674,14 +688,16 @@ nav {
 }
 
 .post-read-more {
-  color: #c4552b;
+  color: #2563eb;
+  color: $blue;
   font-weight: 600;
   font-size: 15px;
 }
 
 .post-read-more:hover,
 .post-read-more:focus-visible {
-  color: #9f441f;
+  color: #2563eb;
+  color: $blue;
   text-decoration: underline;
 }
 
@@ -692,7 +708,7 @@ nav {
   padding: 4px;
   border-radius: 999px;
   border: 1px solid #e6e6e6;
-  background: #f7f7f7;
+  background: var(--surface-1);
 }
 
 .view-toggle-btn {
@@ -792,7 +808,7 @@ nav {
 
 .project-info-toggle {
   border: 1px solid #e5e5e5;
-  background: #f7f7f7;
+  background: var(--surface-1);
   color: #5a544a;
   width: 32px;
   height: 32px;
@@ -806,7 +822,7 @@ nav {
 
 .project-info-toggle:hover,
 .project-info-toggle:focus-visible {
-  background: #efefef;
+  background: var(--surface-2);
   color: #2f2a23;
 }
 
@@ -865,7 +881,8 @@ nav {
 
 .project-preview-link {
   flex: 0 0 auto;
-  color: #c4552b;
+  color: #2563eb;
+  color: $blue;
   font-weight: 600;
   font-size: 13px;
   white-space: nowrap;
@@ -873,7 +890,8 @@ nav {
 
 .project-preview-link:hover,
 .project-preview-link:focus-visible {
-  color: #9f441f;
+  color: #2563eb;
+  color: $blue;
   text-decoration: underline;
 }
 
@@ -896,18 +914,26 @@ nav {
   font-size: 14px;
 }
 
+.project-detail-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .project-detail-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #c4552b;
+  color: #2563eb;
+  color: $blue;
   font-weight: 600;
   font-size: 14px;
 }
 
 .project-detail-link:hover,
 .project-detail-link:focus-visible {
-  color: #9f441f;
+  color: #2563eb;
+  color: $blue;
   text-decoration: underline;
 }
 
@@ -928,7 +954,7 @@ nav {
 }
 
 .project-row:hover {
-  background: #fafafa;
+  background: var(--surface-2);
 }
 
 .project-row:last-child {
@@ -1029,8 +1055,11 @@ nav {
 }
 
 @media (max-width: 860px) {
-  .post-card {
+  .post-card-link {
     grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 16px;
+    align-items: start;
   }
 
   .post-card-media {
@@ -1045,6 +1074,52 @@ nav {
 
 .post-hero {
   margin-top: 10px;
+}
+
+.project-summary {
+  margin: 12px 0 16px;
+  color: #6f6a61;
+  font-size: 16px;
+  max-width: 640px;
+}
+
+.project-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #2f2a23;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.project-cta:hover,
+.project-cta:focus-visible {
+  background: #1f1c17;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.project-cta-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.project-cta--ghost {
+  background: transparent;
+  color: #2f2a23;
+  border: 1px solid #2f2a23;
+}
+
+.project-cta--ghost:hover,
+.project-cta--ghost:focus-visible {
+  background: #2f2a23;
+  color: #ffffff;
 }
 
 .post-breadcrumb {
@@ -1080,7 +1155,7 @@ nav {
   width: 32px;
   height: 32px;
   border-radius: 999px;
-  background: #f3f3f3;
+  background: var(--surface-2);
   color: #6a645a;
   display: inline-flex;
   align-items: center;
@@ -1167,12 +1242,15 @@ nav {
 }
 
 .post-toc a {
-  color: #8a847a;
+  color: #2563eb;
+  color: $blue;
   font-size: 14px;
 }
 
 .post-toc a:hover {
-  color: #c4552b;
+  color: #2563eb;
+  color: $blue;
+  text-decoration: underline;
 }
 
 .post-share {
@@ -1184,7 +1262,7 @@ nav {
   width: 32px;
   height: 32px;
   border-radius: 999px;
-  background: #f7f7f7;
+  background: var(--surface-1);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1199,7 +1277,7 @@ nav {
 
 .post-share a:hover,
 .post-share a:focus-visible {
-  background: #efefef;
+  background: var(--surface-2);
 }
 
 @media (max-width: 960px) {
@@ -1232,18 +1310,25 @@ nav {
 
   nav {
     margin-top: 8px;
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px 10px;
   }
 
   nav a {
-    margin: 6px 8px;
+    margin: 0;
   }
 
   .nav-search {
-    margin-left: 8px;
+    margin-left: 0;
   }
 
   .nav-social {
     width: 100%;
+    flex-basis: 100%;
     justify-content: center;
     margin: 8px 0 0;
   }
@@ -1281,8 +1366,8 @@ nav {
 .error-card {
   padding: 28px;
   border-radius: 24px;
-  background: #f4f1ea;
-  border: 1px solid #ebe7de;
+  background: var(--surface-1);
+  border: 1px solid var(--border-soft);
   box-shadow: 0 10px 24px rgba(60, 50, 40, 0.08);
 }
 
@@ -1325,14 +1410,16 @@ nav {
 }
 
 .error-link {
-  color: #c4552b;
+  color: #2563eb;
+  color: $blue;
   font-weight: 600;
   font-size: 14px;
 }
 
 .error-link:hover,
 .error-link:focus-visible {
-  color: #9f441f;
+  color: #2563eb;
+  color: $blue;
   text-decoration: underline;
 }
 
@@ -1380,7 +1467,7 @@ nav {
 
 
 body:after {
-  background: #e7e2d9;
+  background: var(--surface-2);
   width: 100%;
   height: 3px;
   top: 0;
@@ -1390,7 +1477,7 @@ body:after {
 }
 
 #bar {
-  background: #e7e2d9;
+  background: var(--surface-2);
   height: 3px;
   background-size: cover;
   background-position: left 60%;
@@ -1433,7 +1520,8 @@ body:after {
 }
 
 .cd-container a {
-  color: #30434e;
+  color: #2563eb;
+  color: $blue;
   text-decoration: none;
   font-family: var(--font-sans);
 }
@@ -1479,7 +1567,7 @@ Modules - reusable parts of our design
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #d7e4ed;
+  background: var(--border-soft);
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -1558,7 +1646,7 @@ Modules - reusable parts of our design
     line-height: 32px;
     padding: 0 12px;
     border-radius: 16px;
-    background-color: #e4e4e4;
+    background-color: var(--surface-2);
     margin-bottom: 5px;
     margin-right: 5px;
 }
@@ -1573,9 +1661,10 @@ Modules - reusable parts of our design
 }
 
 .text-link {
-    color: #000;
+    color: #2563eb;
+    color: $blue;
     text-decoration: none;
-    border-bottom: 1px dotted #000;
+    border-bottom: 1px dotted currentColor;
 }
 
 //carbon ads
@@ -1659,9 +1748,10 @@ Modules - reusable parts of our design
   font-size: 13px;
   padding: 4px 12px;
   border: 1px solid #e6e6e6;
-  background-color: #f7f7f7;
+  background-color: var(--surface-1);
   border-radius: 50px;
-  color: #6a645a;
+  color: #2563eb;
+  color: $blue;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
@@ -1674,13 +1764,14 @@ Modules - reusable parts of our design
   align-items: center;
   margin-right: 8px;
   margin-bottom: 6px;
-  background-color: #fafafa;
+  background-color: var(--surface-2);
   font-weight: 500;
   font-size: 13px;
   padding: 4px 12px;
   border: 1px solid #e6e6e6;
   border-radius: 50px;
-  color: #6a645a;
+  color: #2563eb;
+  color: $blue;
 }
 
 .pagination a, .pagination span {
@@ -1694,7 +1785,7 @@ Modules - reusable parts of our design
 
 .pagination a {    
   &:hover {
-      background-color: #f1f1f1;
+      background-color: var(--surface-2);
       color: #333;
   }
 }
@@ -1764,7 +1855,7 @@ Modules - reusable parts of our design
   border: 1px solid #ccc;
   padding: 3px;
   text-align: center;
-  background: #ececec;
+  background: var(--surface-1);
   margin: 8px;
   border-radius: 5px;
 }
@@ -1876,10 +1967,10 @@ Modules - reusable parts of our design
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: #e9f0f5;
+  background: var(--surface-2);
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed;
+  box-shadow: 0 3px 0 var(--border-soft);
 }
 .cd-timeline-content:after {
   content: "";
@@ -1903,12 +1994,13 @@ Modules - reusable parts of our design
 .cd-timeline-content .cd-read-more {
   float: right;
   padding: .8em 1em;
-  background: #acb7c0;
+  background: #2563eb;
+  background: $blue;
   color: white;
   border-radius: 0.25em;
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
-  background-color: #bac4cb;
+  background-color: #1d4ed8;
 }
 .cd-timeline-content .cd-date {
   float: left;
@@ -1923,7 +2015,7 @@ Modules - reusable parts of our design
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid white;
+  border-right: 7px solid var(--surface-2);
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
@@ -1949,7 +2041,7 @@ Modules - reusable parts of our design
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: white;
+    border-left-color: var(--surface-2);
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -1970,7 +2062,7 @@ Modules - reusable parts of our design
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: white;
+    border-right-color: var(--surface-2);
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;

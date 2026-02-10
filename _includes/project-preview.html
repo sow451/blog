@@ -1,9 +1,13 @@
 {% assign note = include.note %}
 {% assign link = include.link %}
+{% assign url = include.url %}
 {% assign max = include.truncate | default: 120 %}
 <div class="project-preview">
   {% if note %}
     <span class="project-preview-text">{{ note | strip_html | truncate: max }}</span>
+  {% endif %}
+  {% if url %}
+    <a class="project-preview-link" href="{{ url }}">Details</a>
   {% endif %}
   {% if link %}
     <a class="project-preview-link" href="{{ link }}" target="_blank" rel="noopener">View</a>

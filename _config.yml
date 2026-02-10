@@ -87,6 +87,11 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
+collections:
+  projects:
+    output: true
+    permalink: /portfolio/:name/
+
 include: ['_pages']
 
 paginate: 10
@@ -102,4 +107,3 @@ exclude:
 
 
 theme: jekyll-theme-minimal
-

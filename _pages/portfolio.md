@@ -2,68 +2,6 @@
 layout: page
 title: Portfolio
 permalink: /portfolio/
-projects:
-  - title: "Gold Loan Renewal Agentic Workflow"
-    year: "2026"
-    status: "WIP"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "Pettai Rap Basket of Goods v CPI Basket of Goods"
-    year: "2026"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "FLDG"
-    year: "2025/2026"
-    status: "WIP"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "Migration Enabler v1"
-    year: "2025"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "Overheard At"
-    year: "2025"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "Gold-loan LOS"
-    year: "2025"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "Gold Loan LMS"
-    year: "2025"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "DA Software"
-    year: "2025"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "Private Debt Funds"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "Dictation Potato"
-    year: "2024"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "Backpack go"
-    year: "2024"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "Stepsu"
-    year: "2024"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "A DB of the RBI's monthly credit data"
-    year: "2024"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "Merchant ACH Recon"
-    year: "2022"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "Pay w Rewards"
-    year: "2022"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "Swifter"
-    year: "2021"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "GIGI"
-    year: "2019"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "Impact on Metro Construction on Traffic in Blore"
-    year: "2018"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "Chrome Extension"
-    year: "2017"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  - title: "What Happened in Parliament Today"
-    year: "2015"
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 ---
 
 This portfolio is a selection of projects I've built, reflecting my work with AI tools, credit and payments (SaaS and B2C).  
@@ -73,9 +11,11 @@ This portfolio is a selection of projects I've built, reflecting my work with AI
   {% include view-toggle.html label="Portfolio view toggle" %}
 </div>
 
+{% assign projects = site.projects | sort: "order" %}
+
 <div class="view-panel view-cards is-active">
   <div class="project-grid">
-    {% for project in page.projects %}
+    {% for project in projects %}
       {% include project-card.html project=project id=forloop.index %}
     {% endfor %}
   </div>
@@ -83,7 +23,7 @@ This portfolio is a selection of projects I've built, reflecting my work with AI
 
 <div class="view-panel view-list">
   <div class="project-list-simple">
-    {% for project in page.projects %}
+    {% for project in projects %}
       {% include project-row.html project=project id=forloop.index %}
     {% endfor %}
   </div>
