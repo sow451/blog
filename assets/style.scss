@@ -12,16 +12,19 @@
 /* BASE RULES */
 /**************/
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --font-sans: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --background: oklch(1 0 0);
   --primary: oklch(0.623 0.214 259.815);
   --surface-1: #ffffff;
   --surface-2: #fafafa;
   --surface-3: #f5f5f5;
   --border-soft: #efefef;
+  --text-strong: oklch(0.22 0.02 257 / 0.95);
+  --text-main: oklch(0.278078 0.029596 256.848 / 0.8);
+  --text-muted: oklch(0.43 0.02 257 / 0.72);
 }
 
 html {
@@ -37,9 +40,9 @@ body {
   font-family: var(--font-sans);
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.75;
-  color: #2f2b25;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-main);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   height: 100%;
@@ -60,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 15px;
   padding: 0;
   text-align: center;
-  color: $darkerGray;
+  color: var(--text-strong);
 
   @include mobile {
     line-height: 1.4;
@@ -100,7 +103,17 @@ h4 {
 }
 
 p {
-  margin: 18px 0;
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-main);
+}
+
+.entry p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-main);
+  margin: 20px 0;
 }
 
 table {
@@ -1143,7 +1156,7 @@ nav {
 
 .project-summary {
   margin: 12px 0 16px;
-  color: #6f6a61;
+  color: var(--text-main);
   font-size: 16px;
   max-width: 640px;
 }
@@ -1205,14 +1218,14 @@ nav {
   line-height: 1.15;
   font-weight: 700;
   text-align: left;
-  color: #3a342b;
+  color: var(--text-strong);
 }
 
 .post-meta-row {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #7f786e;
+  color: var(--text-muted);
   font-size: 14px;
 }
 
@@ -1221,7 +1234,7 @@ nav {
   height: 32px;
   border-radius: 999px;
   background: var(--surface-2);
-  color: #6a645a;
+  color: var(--text-muted);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1236,13 +1249,13 @@ nav {
 }
 
 .post-meta-dot {
-  color: #b2aba1;
+  color: var(--text-muted);
 }
 
 .post-updated {
   margin-top: 8px;
   font-size: 13px;
-  color: #9a948b;
+  color: var(--text-muted);
 }
 
 .post-divider {
@@ -1293,7 +1306,7 @@ nav {
 .sidebar-title {
   font-size: 14px;
   font-weight: 700;
-  color: #4a453c;
+  color: var(--text-strong);
   margin-bottom: 12px;
 }
 
