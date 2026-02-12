@@ -1,7 +1,6 @@
 ---
 layout: project
 title: "Superdad"
-order: 22
 year: "2024"
 preview: "https://superdad-omega.vercel.app/"
 image: "/images/projects/2024-superdad-dad-dash.md/superdadscreenshot.png"

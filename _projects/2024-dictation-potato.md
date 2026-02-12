@@ -1,7 +1,6 @@
 ---
 layout: project
 title: "Dictation Potato"
-order: 10
 year: "2024"
 date: 2024-09-20
 status: "Shipped"

@@ -2,7 +2,6 @@
 layout: project
 title: "Pettai Rap v CPI (using GoI MCP)"
 preview: "https://cpi-petarap.vercel.app/"
-order: 2
 year: "2026"
 note: "Using the GOI-MOSPI MCP data, I track MoM inflation from the pov of a cult 90s Tamil rap song.
 "

@@ -2,7 +2,6 @@
 layout: project
 title: "Has Parliament Adjourned Yet?"
 preview: "https://x.com/HasParlAdjYet"
-order: 21
 year: "2017"
 image: "/images/projects/2017-has-parliament-adjourned-yet.md/hasparl_thumbnail.png"
 note: "Peppered with gifs ranging from Spongebob Squarepants to the Simpsons, @HasParlAdjYet speaks Gen-Z ft. MPs"

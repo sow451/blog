@@ -2,10 +2,12 @@
 layout: project
 title: "Gold Loan (IBT)-  Renewal via Agentic Workflow"
 preview: "https://example.com/gold-loan-renewal-agentic-workflow/"
-order: 1
 year: "2026"
 note: "A high ROI agentic workflow to increase renewal rates for IBT gold loans."
+image: "/images/projects/2026-gold-loan-renewal-agentic-workflow.md/thumbnail.png"
+
 ---
+
 
 ## Gold Loans in India
 
@@ -37,7 +39,19 @@ An agentic workflow that:
 
 In our example: A fictious 8,000-customer book holds ₹245 Cr in collateral against ₹143 Cr in outstanding loans - ₹37 Cr of trapped equity that the company is not lending against but a competitor will. 
 
+**(this data/ loan book estimates are all made up and not real)**
+
+
+![EBT threat and attrition model](/images/projects/2026-gold-loan-renewal-agentic-workflow.md/EBT%20Threat%20quantified.png)
+
+
+As you can see - the EBT attrition threat is real for our fictious NBFC. 
+
 Industry data shows 30–40% of gold loan customers don't renew at maturity, and we estimate 20–30% of our book is specifically exposed to EBT: customers who still want a loan but will take it from whoever offers more money against the same gold. Further, a loss of renewal also impacts the CAC: LTV metric, increasing win-back and performance ad spend costs. 
+
+
+![NII and P&L impact scenario](/images/projects/2026-gold-loan-renewal-agentic-workflow.md/NII%20and%20P%26L%20Impact.png)
+
 
 P&L Impact: At an 80% recovery rate on EBT-exposed customers, Proactive IBT delivers **₹4.9 Cr in incremental annual income on a approx ₹25L build** — a payback period under one month. 
 
@@ -45,3 +59,19 @@ Proactive IBT in this case also moves from being a product-led growth initiative
 
 
 ## Proposed Agentic Workflow
+
+![Proactive IBT orchestrator and agent interactions](/images/projects/2026-gold-loan-renewal-agentic-workflow.md/agentic_orchestrator_interactions.png)
+
+
+In the demo, I built the workflow to be simple, and intentionally deterministic: one customer goes through fixed stages (rate fetch, scan, scoring, KYC, offer, communication, OTP, closure), with simulated outcomes and clear step-by-step logs. This gives us an idea of how we can run the pipeline and understand edge cases and errors better. We are trading-off reliability, speed, and explainability for a live walkthrough made in record time (less than a day).
+
+In production, the same flow should be upgraded to a true orchestrated agentic system with MCP / API handling capabilities. The orchestrator will manage state transitions, error handling, retries, callback scheduling, and automatic re-runs when external dependencies fail or customer responses are delayed. 
+
+Instead of fixed-path execution and manually mapping all possible route, production logic s support dynamic routing, RAG-drivenpolicy decisions, and "send for approval" flows and graceful recovery, so the pipeline can run continuously at portfolio scale with minimal manual intervention. 
+
+There is some observability built in, but nowhere close to the level needed for even a CUG/internal beta. No evals have been set, and the flow is process-wise audit-ready only where it is deterministic and not model-led. 
+
+![Video walkthrough screenshot](/images/projects/2026-gold-loan-renewal-agentic-workflow.md/voice%20recordings.png)
+
+Eleven Labs was used to record an example call - this has no "actual benefit" to the demo, since its simulated and one-sided, but I enjoyed translating my thoughts into Hindi and finding an appropriate voice for this purpose - used it as an opportunity to play around w Vapi, and ultimately went with Eleven for speed and ease for a few mins.
+

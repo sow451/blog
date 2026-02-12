@@ -1,7 +1,6 @@
 ---
 layout: project
 title: "Backpack Go"
-order: 11
 year: "2024"
 date: 2024-10-02
 status: "Shipped"

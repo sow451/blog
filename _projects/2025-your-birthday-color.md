@@ -2,7 +2,6 @@
 layout: project
 title: "Your Birthday Color"
 preview: "https://your-birthday-hex-color.streamlit.app/"
-order: 20
 year: "2025"
 status: "fun"
 image: "/images/projects/2025-your-birthday-color.md/birthdaycolour_thumbnail.png"

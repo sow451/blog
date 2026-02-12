@@ -11,20 +11,26 @@ This portfolio is a selection of projects I've built, reflecting my work with AI
   {% include view-toggle.html label="Portfolio view toggle" %}
 </div>
 
-{% assign projects = site.projects | sort: "order" %}
+{% assign project_years = site.projects | map: "year" | uniq | sort | reverse %}
 
 <div class="view-panel view-cards is-active">
   <div class="posts post-list">
-    {% for project in projects %}
-      {% include project-card.html project=project %}
+    {% for year in project_years %}
+      {% assign projects_in_year = site.projects | where: "year", year | sort: "date" | reverse %}
+      {% for project in projects_in_year %}
+        {% include project-card.html project=project %}
+      {% endfor %}
     {% endfor %}
   </div>
 </div>
 
 <div class="view-panel view-list">
   <div class="project-list-simple">
-    {% for project in projects %}
-      {% include project-row.html project=project %}
+    {% for year in project_years %}
+      {% assign projects_in_year = site.projects | where: "year", year | sort: "date" | reverse %}
+      {% for project in projects_in_year %}
+        {% include project-row.html project=project %}
+      {% endfor %}
     {% endfor %}
   </div>
 </div>

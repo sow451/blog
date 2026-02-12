@@ -2,8 +2,7 @@
 layout: project
 title: "Overheard At"
 preview: "https://example.com/overheard-at/"
-order: 5
-year: "2024"
+year: "2025"
 image: "/images/projects/2025-overheard-at.md/overheard_at_thumbnail.png"
 preview: "https://overheardatgff.vercel.app/"
 note: "A lightweight anonymous message board for conferences. I built it so attendees can share the funny, awkward, and memorable lines they overhear in hallways."

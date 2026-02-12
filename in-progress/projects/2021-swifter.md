@@ -1,9 +1,9 @@
 ---
 layout: project
-title: "GIGI"
-preview: "https://example.com/gigi/"
-order: 17
-year: "2019"
+title: "Swifter"
+preview: "https://example.com/swifter/"
+order: 14
+year: "2021"
 note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 ---
 

@@ -2,7 +2,6 @@
 layout: project
 title: "Preamble Chrome Extension"
 preview: 
-order: 19
 year: "2017"
 image: "/images/projects/2017-chrome-extension.md/preamble-chrome-extension-thumbnail.png"
 note: "My first ever coding project: a Chrome extension that shows the Preamble to the Indian Constitution on every new tab."

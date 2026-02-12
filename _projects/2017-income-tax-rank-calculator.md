@@ -2,7 +2,6 @@
 layout: project
 title: "Income Tax Rank Calculator"
 preview: "https://income-tax-rank-calculator.vercel.app/"
-order: 3
 year: "2017"
 image: "/images/projects/2017-income-tax-rank-calculator.md/income-tax-thumbnail.svg"
 note: "Built as part of a calculator tutorial while learning vanilla JS, CSS, and HTML."

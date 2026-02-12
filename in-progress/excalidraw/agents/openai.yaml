@@ -1,0 +1,4 @@
+interface:
+  display_name: "Excalidraw Builder"
+  short_description: "Create and edit Excalidraw diagram files"
+  default_prompt: "Use $excalidraw to create a clean, readable architecture diagram in a .excalidraw file."
