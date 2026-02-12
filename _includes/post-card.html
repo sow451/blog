@@ -1,20 +1,10 @@
 {% assign post = include.post %}
-<article class="post-card">
-  <a class="post-card-link" href="{{ site.baseurl }}{{ post.url }}" aria-label="Read post: {{ post.title }}">
-    <div class="post-card-media">
-      {% if post.image %}
-        <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" />
-      {% else %}
-        <div class="post-card-placeholder" aria-hidden="true">
-          <span>{{ site.name | slice: 0, 1 }}</span>
-        </div>
-      {% endif %}
-    </div>
-    <div class="post-card-content">
-      {% include post-meta.html post=post %}
-      <h2 class="post-title">{{ post.title }}</h2>
-      <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
-      <span class="post-read-more">Read more →</span>
-    </div>
-  </a>
-</article>
+{% capture post_aria_label %}Read post: {{ post.title }}{% endcapture %}
+{% assign post_href = post.url | relative_url %}
+{% include content-card.html
+  item=post
+  kind="post"
+  href=post_href
+  cta="Read more →"
+  aria_label=post_aria_label
+%}

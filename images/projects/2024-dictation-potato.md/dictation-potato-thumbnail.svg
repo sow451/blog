@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Dictation Potato Thumbnail</title>
+  <desc id="desc">Spelling game themed thumbnail for Dictation Potato.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5ffe8"/>
+      <stop offset="100%" stop-color="#fff4d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="140" y="120" width="920" height="390" rx="24" fill="#1f2937" opacity="0.9"/>
+  <text x="180" y="230" fill="#f9fafb" font-size="58" font-family="Georgia, serif">Spell this word...</text>
+  <text x="180" y="315" fill="#facc15" font-size="68" font-family="Georgia, serif" font-weight="700">potato</text>
+  <text x="180" y="385" fill="#f9fafb" font-size="40" font-family="Georgia, serif">Weekly lists • Speech playback • Practice mode</text>
+  <ellipse cx="970" cy="470" rx="84" ry="58" fill="#a16207"/>
+  <circle cx="940" cy="455" r="8" fill="#1f2937"/>
+  <circle cx="1000" cy="455" r="8" fill="#1f2937"/>
+  <path d="M935 488Q970 514 1005 488" stroke="#1f2937" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <text x="88" y="560" fill="#111827" font-size="64" font-family="Georgia, serif" font-weight="700">Dictation Potato</text>
+</svg>

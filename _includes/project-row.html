@@ -22,9 +22,12 @@
           {{ project.title }}
         {% endif %}
       </span>
+      {% if project.preview %}
+        <a class="project-row-live" href="{{ project.preview }}" target="_blank" rel="noopener">Live preview ↗</a>
+      {% endif %}
     </div>
-    {% if project.note or project.link or project_url %}
-      {% include project-preview.html note=project.note link=project.link url=project_url truncate=140 %}
+    {% if project.note %}
+      {% include project-preview.html note=project.note truncate=140 %}
     {% endif %}
   </div>
 </div>

@@ -11,12 +11,12 @@ This portfolio is a selection of projects I've built, reflecting my work with AI
   {% include view-toggle.html label="Portfolio view toggle" %}
 </div>
 
-{% assign projects = site.projects | sort: "order" %}
+{% assign projects = site.projects | sort: "year" | reverse %}
 
 <div class="view-panel view-cards is-active">
-  <div class="project-grid">
+  <div class="posts post-list">
     {% for project in projects %}
-      {% include project-card.html project=project id=forloop.index %}
+      {% include project-card.html project=project %}
     {% endfor %}
   </div>
 </div>
@@ -24,7 +24,7 @@ This portfolio is a selection of projects I've built, reflecting my work with AI
 <div class="view-panel view-list">
   <div class="project-list-simple">
     {% for project in projects %}
-      {% include project-row.html project=project id=forloop.index %}
+      {% include project-row.html project=project %}
     {% endfor %}
   </div>
 </div>
@@ -61,29 +61,5 @@ This portfolio is a selection of projects I've built, reflecting my work with AI
         setView(stored);
       }
     } catch (e) {}
-
-    var infoToggles = document.querySelectorAll('.project-card .project-info-toggle');
-    var projectCards = document.querySelectorAll('.project-card');
-
-    function closeAllProjectDetails() {
-      projectCards.forEach(function (card) {
-        card.classList.remove('is-open');
-        var toggle = card.querySelector('.project-info-toggle');
-        if (toggle) toggle.setAttribute('aria-expanded', 'false');
-      });
-    }
-
-    infoToggles.forEach(function (toggle) {
-      toggle.addEventListener('click', function (event) {
-        event.stopPropagation();
-        var card = toggle.closest('.project-card');
-        if (!card) return;
-        var isOpen = card.classList.contains('is-open');
-        closeAllProjectDetails();
-        if (isOpen) return;
-        card.classList.add('is-open');
-        toggle.setAttribute('aria-expanded', 'true');
-      });
-    });
   });
 </script>

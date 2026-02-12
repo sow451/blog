@@ -1,0 +1,51 @@
+{% assign item = include.item %}
+{% assign kind = include.kind | default: "post" %}
+{% assign href = include.href %}
+{% assign cta = include.cta | default: "Read more →" %}
+{% assign aria_label = include.aria_label | default: item.title %}
+
+{% assign card_excerpt = item.excerpt | strip_html | truncate: 180 %}
+{% if kind == "project" and item.note %}
+  {% assign card_excerpt = item.note | strip_html | truncate: 180 %}
+{% endif %}
+
+<article class="post-card">
+  <div class="post-card-shell">
+    {% if kind == "project" and item.preview %}
+      <a class="content-card-top-link" href="{{ item.preview }}" target="_blank" rel="noopener">Live preview ↗</a>
+    {% endif %}
+    <a class="post-card-link" href="{{ href }}" aria-label="{{ aria_label }}">
+      <div class="post-card-media">
+        {% if item.image %}
+          <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.title }}" />
+        {% else %}
+          <div class="post-card-placeholder" aria-hidden="true">
+            <span>{{ site.name | slice: 0, 1 }}</span>
+          </div>
+        {% endif %}
+      </div>
+      <div class="post-card-content">
+        {% if kind == "post" %}
+          {% include post-meta.html post=item %}
+        {% else %}
+          <div class="post-meta">
+            <div class="post-tags-inline">
+              {% if item.status %}
+                <span class="post-tag">{{ item.status }}</span>
+              {% endif %}
+              {% if item.year %}
+                <span class="post-tag post-tag--light">{{ item.year }}</span>
+              {% endif %}
+            </div>
+            <span class="post-meta-text">Portfolio</span>
+          </div>
+        {% endif %}
+        <h2 class="post-title">{{ item.title }}</h2>
+        {% if card_excerpt != blank %}
+          <p class="post-excerpt">{{ card_excerpt }}</p>
+        {% endif %}
+        <span class="post-read-more">{{ cta }}</span>
+      </div>
+    </a>
+  </div>
+</article>

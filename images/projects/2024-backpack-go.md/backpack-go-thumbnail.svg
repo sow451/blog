@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Backpack Go Thumbnail</title>
+  <desc id="desc">Map-themed thumbnail for Backpack Go project.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f7ff"/>
+      <stop offset="100%" stop-color="#fdf7e3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g stroke="#1f2937" stroke-width="3" opacity="0.25">
+    <path d="M120 140H1080"/>
+    <path d="M120 220H1080"/>
+    <path d="M120 300H1080"/>
+    <path d="M120 380H1080"/>
+    <path d="M120 460H1080"/>
+    <path d="M220 80V550"/>
+    <path d="M360 80V550"/>
+    <path d="M500 80V550"/>
+    <path d="M640 80V550"/>
+    <path d="M780 80V550"/>
+    <path d="M920 80V550"/>
+  </g>
+  <circle cx="610" cy="315" r="118" fill="#16a34a" opacity="0.9"/>
+  <circle cx="610" cy="315" r="52" fill="#ffffff"/>
+  <path d="M610 228V402M523 315H697" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+  <text x="88" y="560" fill="#111827" font-size="68" font-family="Georgia, serif" font-weight="700">Backpack Go</text>
+</svg>

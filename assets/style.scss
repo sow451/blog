@@ -579,6 +579,10 @@ nav {
   margin: 0;
 }
 
+.post-card-shell {
+  position: relative;
+}
+
 .post-card-link {
   display: grid;
   grid-template-columns: 240px 1fr;
@@ -647,6 +651,38 @@ nav {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 8px;
+}
+
+.content-card-meta-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.content-card-meta-row .post-meta {
+  margin-bottom: 0;
+}
+
+.content-card-top-link {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 2;
+  color: #2563eb;
+  color: $blue;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.content-card-top-link:hover,
+.content-card-top-link:focus-visible {
+  color: #2563eb;
+  color: $blue;
+  text-decoration: underline;
 }
 
 .post-tags-inline {
@@ -998,6 +1034,30 @@ nav {
   min-width: 0;
 }
 
+.project-row-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #dcdcdc;
+  background: var(--surface-1);
+  color: #2563eb;
+  color: $blue;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.project-row-live:hover,
+.project-row-live:focus-visible {
+  color: #2563eb;
+  color: $blue;
+  border-color: #cfcfcf;
+  text-decoration: none;
+}
+
 .project-row-note {
   color: #7b766d;
   font-size: 14px;
@@ -1069,6 +1129,11 @@ nav {
   .post-meta {
     flex-wrap: wrap;
     gap: 10px;
+  }
+
+  .content-card-top-link {
+    top: 14px;
+    right: 16px;
   }
 }
 

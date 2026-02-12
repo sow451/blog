@@ -26,13 +26,10 @@ layout: default
     {% if page.note %}
       <p class="project-summary">{{ page.note }}</p>
     {% endif %}
-    {% if page.link or page.preview %}
+    {% if page.preview %}
       <div class="project-cta-group">
         {% if page.preview %}
           <a class="project-cta" href="{{ page.preview }}" target="_blank" rel="noopener">Live preview</a>
-        {% endif %}
-        {% if page.link %}
-          <a class="project-cta project-cta--ghost" href="{{ page.link }}" target="_blank" rel="noopener">View project</a>
         {% endif %}
       </div>
     {% endif %}
