@@ -11,7 +11,7 @@ This portfolio is a selection of projects I've built, reflecting my work with AI
   {% include view-toggle.html label="Portfolio view toggle" %}
 </div>
 
-{% assign projects = site.projects | sort: "year" | reverse %}
+{% assign projects = site.projects | sort: "order" %}
 
 <div class="view-panel view-cards is-active">
   <div class="posts post-list">
