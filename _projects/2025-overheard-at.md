@@ -5,10 +5,11 @@ preview: "https://example.com/overheard-at/"
 order: 5
 year: "2024"
 image: "/images/projects/2025-overheard-at.md/overheard_at_thumbnail.png"
+preview: "https://overheardatgff.vercel.app/"
 note: "A lightweight anonymous message board for conferences. I built it so attendees can share the funny, awkward, and memorable lines they overhear in hallways."
 ---
 
-_tldr: Overheard At is a small conference side-project that lets people post anonymous hallway quotes in real time. I started it as a fun experiment, and it quickly turned into a neat product idea with moderation, duplicate checks, and simple anti-spam controls._
+_tldr: Overheard At is a small conference side-project that lets people post anonymous hallway quotes in real time, with moderation, duplicate checks, and simple anti-spam controls._
 
 First, some background: This week I attended GFF 2025. In case you haven't heard of it - GFF is India's largest fintech conference. It takes place once a year, and pulls the attendance of who's who of fintech, finservices and well... anyone who's involved with touching money in anyway in India.
 

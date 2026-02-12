@@ -4,7 +4,6 @@ title: "Superdad"
 order: 22
 year: "2024"
 preview: "https://superdad-omega.vercel.app/"
-link: "https://github.com/sow451/superdad"
 image: "/images/projects/2024-superdad-dad-dash.md/superdadscreenshot.png"
 note: "A lightweight endless-runner game built with vanilla HTML, CSS, and JavaScript on canvas."
 ---
