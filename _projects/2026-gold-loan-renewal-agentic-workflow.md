@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Gold Loan (IBT)-  Renewal via Agentic Workflow"
-preview: "https://example.com/gold-loan-renewal-agentic-workflow/"
+preview: "https://ibtagenticdemo.streamlit.app/"
 year: "2026"
 note: "A high ROI agentic workflow to increase renewal rates for IBT gold loans."
 image: "/images/projects/2026-gold-loan-renewal-agentic-workflow.md/thumbnail.png"
