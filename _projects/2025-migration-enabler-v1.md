@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Migration Enabler - UI and Data Type Checker"
-preview: "https://migrationv1-6sm7xsm9q-sow451s-projects.vercel.app/"
+preview: "https://migrationv1.vercel.app/"
 year: "2025"
 note: "A prototype of a migration console (UI + logic) to validate loan-books/tapes, surface errors before LMS migration"
 image: "/images/projects/2025-migration-enabler-v1.md/thumbnail.png"
