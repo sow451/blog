@@ -1,7 +1,7 @@
 ---
 layout: project
-title: "Wordle Personality Analysis + Quiz"
-preview: "https://www.simplyreed.com/"
+title: "Wordle Analysis + Quiz"
+preview: "https://wordle-people.streamlit.app/"
 year: "2026"
 note: "A quiz to identify your personality based on your Wordle style"
 image: "/images/projects/2026-wordle-people/thummbnail.png"
