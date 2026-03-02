@@ -4,20 +4,57 @@ title: About
 permalink: /about/
 ---
 
-My name is Sowmya. I specialize in building regulated fintech products across payments and credit. 
+My name is Sowmya. 
 
-I worked briefly with commercial bonds and derivatives, before spending time at Google, then Uber, then my startup ((YC W20) which I sold in 2023). I worked at my acquirer on payments, and currently I build credit infra as Head of Product for a muti-national financial giant.  
+tldr: Head of Product — Credit Infrastructure & Lending Platforms | AI, Risk & Capital Markets | Ex-YC Founder | Google | Uber | Mom to 2 kids / 1 dog| 
 
-I read SFF, parent 2 👦, 1 🐶 and live in Bangalore, India. 
+I am a product leader specializing in building 0-1, mission-critical, regulated credit infrastructure supporting institutional lending, capital deployment, and portfolio monitoring across global financial partners.
+
+Over the past decade, I have led the design and commercialization of fintech platforms spanning global financial companies, and venture-backed startups. My work sits at the intersection of product strategy, regulation, capital markets, and (of late) applied AI — translating the requirements of regulators into scalable technology products. 
+
+I currently serve as VP & Head of Product at Credit Saison's (a top-five Japanese financial institution) tech unit , where I lead the development of global credit infrastructure for wholesale lending, and private credit. My team builds systems enabling, among others, the largest secured lender in India, to originate, distribute, monitor, and manage wholesale loan portfolios.
+
+Under my leadership, we have launched:
+
+1. a global private-credit operating system,
+
+2. India’s most advanced co-lending and securitization platforms, and
+
+3. Scalable SaaS-credit infrastructure used by leading lenders and institutional partners.
+
+Prior to this, I founded Swifter ACH Payments (YC W20), where I built ACH payment APIs and reconciliation infrastructure from first principles. The company was acquired in 2023 following commercial deployment with enterprise customers.
+
+I have also held senior product and policy leadership roles at:
+
+1. Treez, where I owned ACH payments strategy, revenue, and unit economics,
+2. Uber, leading regulatory pricing and government partnerships across South India and Sri Lanka, and
+3. Google, advising on financial products and Android ecosystem policy in emerging markets.
+
+Earlier in my career, I worked on securitization and debt products at Clifford Chance (London & Singapore) and with India’s Ministry of Finance, contributing to financial-sector reform initiatives alongside RBI and SEBI stakeholders.
+
+
+In my personal life, I am a parent to 2 young boys, and a middle-aged labrador. I live in Bangalore, India, and when I'm not parenting, or reading, I can be found trying to learn the guitar, and practice my watercolour skills. I'm an optimist, and a strong believer in kindness, equity and having fun while trying to build big things.
 
 ---
 
-## **Skills**
-- AI Builder
-- Product Management
-- Payment / Credit Operations (KYC, compliance, filings, LOS, LMS)
-- Growth and Partnerships (early-stage)
-- Fintech Strategy (US/India)
+##Leadership Focus
+
+My work has centered around building durable financial platforms in highly regulated environments, including:
+
+Credit & Lending Infrastructure (LOS, LMS, securitization, co-lending)
+
+Payments & Embedded Finance
+
+Regulatory technology and compliance architecture
+
+Product strategy from 0→1 through scale
+
+Cross-border fintech  (US & India)
+
+Of late: AI-enabled underwriting and risk systems
+
+
+I am particularly interested in how AI reshapes capital allocation, underwriting, and financial operations over the next decade. I am working on a hypothesis with respect to real-time underwriting, or always-on underwriting as the future of underwriting.
 
 ---
 
