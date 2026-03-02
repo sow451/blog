@@ -6,13 +6,13 @@ permalink: /about/
 
 My name is Sowmya. 
 
-tldr: Head of Product — Credit Infrastructure & Lending Platforms | AI, Risk & Capital Markets | Ex-YC Founder | Google | Uber | Mom to 2 kids / 1 dog| 
+tldr: Head of Product — Credit Infrastructure & Lending Platforms - AI, Risk & Capital Markets - Ex-YC Founder - Google - Uber - Mom to 2 kids / 1 dog
 
-I am a product leader specializing in building 0-1, mission-critical, regulated credit infrastructure supporting institutional lending, capital deployment, and portfolio monitoring across global financial partners.
+I am a product leader. I build regulated credit infrastructure to support institutional lending, capital deployment, and portfolio monitoring for global financial partners.
 
-Over the past decade, I have led the design and commercialization of fintech platforms spanning global financial companies, and venture-backed startups. My work sits at the intersection of product strategy, regulation, capital markets, and (of late) applied AI — translating the requirements of regulators into scalable technology products. 
+Over the past decade, I have led the design and commercialization of fintech platforms spanning global financial companies, and venture-backed startups. My work usually sits at the intersection of product strategy, compliance and ops, business growth, and (of late) applied AI. Due to my background in securities law and regulation, I specialise in translating the requirements of regulators into scalable technology products. 
 
-I currently serve as VP & Head of Product at Credit Saison's (a top-five Japanese financial institution) tech unit , where I lead the development of global credit infrastructure for wholesale lending, and private credit. My team builds systems enabling, among others, the largest secured lender in India, to originate, distribute, monitor, and manage wholesale loan portfolios.
+I currently serve as VP & Head of Product at Credit Saison's (a top-five Japanese financial institution) tech unit , where I lead the development of credit infrastructure for wholesale lending, and private credit. My team builds systems enabling, among others, the largest secured lender in India, to originate, distribute, monitor, and manage wholesale loan portfolios.
 
 Under my leadership, we have launched:
 
@@ -37,24 +37,24 @@ In my personal life, I am a parent to 2 young boys, and a middle-aged labrador. 
 
 ---
 
-##Leadership Focus
+## **Leadership Achievements**
 
-My work has centered around building durable financial platforms in highly regulated environments, including:
+1. 2025: I built a gold-loan LOS and LMS from scratch and deployed it in prod w a new client.
 
-Credit & Lending Infrastructure (LOS, LMS, securitization, co-lending)
+2. 2025: I helped strategise and support the onboarding and migration of loan portfolios of one of India's largest lenders. 
 
-Payments & Embedded Finance
+3. 2024: I launched merchant B2B payments at Treez utilising BaaS infra. 
 
-Regulatory technology and compliance architecture
+4. 2023: I launched and scaled B2C payments on cannabis to over 2 million dollars in a beta. 
 
-Product strategy from 0→1 through scale
+5. 2021-22: When Covid made my startup unviable, I defered our Series A raise and pivoted to explore options and pivot. I found a niche business opportunity and was able to grow a team again. 
 
-Cross-border fintech  (US & India)
+6. 2017: I was instrumental in handling strike and shutdown negotiations for Uber across 3 key markets in India. Our business continued as usual. 
 
-Of late: AI-enabled underwriting and risk systems
+7. 2015: My hometown Chennai faced unprecedented flooding. During this disaster I co-ordinated a 2000+ relief effort with a bunch of friends. I was recognised as one of Twitter's Personalities of the Year that year in India. 
 
 
-I am particularly interested in how AI reshapes capital allocation, underwriting, and financial operations over the next decade. I am working on a hypothesis with respect to real-time underwriting, or always-on underwriting as the future of underwriting.
+Current interest: I am particularly interested in how AI reshapes capital allocation, underwriting, and financial operations over the next decade. I am working on a hypothesis with respect to real-time underwriting, or always-on underwriting as the future of underwriting.
 
 ---
 
