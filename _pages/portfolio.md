@@ -4,7 +4,7 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-This portfolio is a selection of projects I've built, reflecting my work with AI tools, credit and payments (SaaS and B2C).  
+This portfolio is a selection of projects I've built. Some reflect my work ideas, and others are fun projects I've built with AI tools.  
 
 
 <div class="portfolio-controls">
