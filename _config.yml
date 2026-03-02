@@ -104,6 +104,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - in-progress
 
 
 theme: jekyll-theme-minimal

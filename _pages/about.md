@@ -6,7 +6,7 @@ permalink: /about/
 
 My name is Sowmya. 
 
-tldr: Head of Product — Credit Infrastructure & Lending Platforms - AI, Risk & Capital Markets - Ex-YC Founder - Google - Uber - Mom to 2 kids / 1 dog
+tldr: Head of Product •  Credit Infrastructure & Lending Platforms •  Payments •  Ex-YC Founder •  Google •  Uber •  Mom to 2 kids / 1 dog
 
 I am a product leader. I build regulated credit infrastructure to support institutional lending, capital deployment, and portfolio monitoring for global financial partners.
 
