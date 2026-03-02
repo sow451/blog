@@ -47,7 +47,7 @@ In my personal life, I am a parent to 2 young boys, and a middle-aged labrador. 
 
 4. 2023: I launched and scaled B2C payments on cannabis to over 2 million dollars in a beta. 
 
-5. 2021-22: When Covid made my startup unviable, I defered our Series A raise and pivoted to explore options and pivot. I found a niche business opportunity and was able to grow a team again. 
+5. 2021-22: When Covid made my startup unviable, I defered our Series A raise and pivoted. I found a niche business opportunity and was able to grow a team again. 
 
 6. 2017: I was instrumental in handling strike and shutdown negotiations for Uber across 3 key markets in India. Our business continued as usual. 
 
