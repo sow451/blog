@@ -132,9 +132,12 @@ class AgentspotterPageTest < Minitest::Test
     assert_equal "page", front_matter["layout"]
     assert_equal "Agentspotter Context", front_matter["title"]
     assert_equal "/agentspotter/context/", front_matter["permalink"]
-    assert_includes body, "README Context"
-    assert_includes body, "Deployment Notes From README"
-    assert_includes body, "https://github.com/sow451/agent-spotter/blob/main/context.md"
+    assert_includes body, "# agent-spotter: context"
+    assert_includes body, "## Table of Contents"
+    assert_includes body, "### Purpose"
+    assert_includes body, "### Flow"
+    assert_includes body, "### Contact"
+    refute_includes body, "README Context"
   end
 
   private
