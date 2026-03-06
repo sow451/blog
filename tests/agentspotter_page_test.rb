@@ -6,6 +6,7 @@ require "yaml"
 class AgentspotterPageTest < Minitest::Test
   ROOT = Pathname.new(__dir__).join("..").expand_path
   PAGE_FILE = ROOT.join("_pages/agentspotter.md")
+  CONTEXT_FILE = ROOT.join("_pages/agentspotter-context.md")
   NAV_FILE = ROOT.join("_layouts/default.html")
   PROJECT_FILE = ROOT.join("_projects/2026-agentspotter-public-feed.md")
   GENERATED_FILE = ROOT.join("_site/agentspotter/index.html")
@@ -56,10 +57,9 @@ class AgentspotterPageTest < Minitest::Test
     assert_equal "/agentspotter/", front_matter["permalink"]
 
     required_blocks = [
-      "Agentspotter tracks public AI crawler and agent activity.",
-      "<h2>Quick Context</h2>",
-      "Signal Glossary",
-      "context.md on GitHub",
+      "Agentspotter tracks public AI crawler and agent activity through a small public experiment.",
+      'Data below. Please note: A successful hi from "agent" only means there was follow-through, it is not a true guarantee of autonomy.',
+      '<a href="/agentspotter/context/">Agentspotter Context</a>',
       '<div class="agentspotter-shell">',
       'id="agentspotter-status"',
       'id="agentspotter-counters"',
@@ -122,6 +122,19 @@ class AgentspotterPageTest < Minitest::Test
     core_markers.each do |marker|
       assert_includes generated_html, marker, "Expected generated HTML to include #{marker.inspect}"
     end
+  end
+
+  def test_agentspotter_context_page_exists_with_permalink
+    assert CONTEXT_FILE.file?, "Expected #{CONTEXT_FILE} to exist"
+
+    front_matter, body = parse_markdown_with_front_matter(CONTEXT_FILE)
+
+    assert_equal "page", front_matter["layout"]
+    assert_equal "Agentspotter Context", front_matter["title"]
+    assert_equal "/agentspotter/context/", front_matter["permalink"]
+    assert_includes body, "instruction-following behavior"
+    assert_includes body, "Full context and methodology live"
+    assert_includes body, "https://github.com/sow451/agent-spotter/blob/main/context.md"
   end
 
   private

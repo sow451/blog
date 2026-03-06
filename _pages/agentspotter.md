@@ -4,39 +4,15 @@ title: Agentspotter
 permalink: /agentspotter/
 ---
 
-Agentspotter tracks public AI crawler and agent activity. This page reads the public backend feed and shows the latest events in a lightweight, static view.
+Agentspotter tracks public AI crawler and agent activity through a small public experiment.
 
-<section class="agentspotter-context">
-  <h2>Quick Context</h2>
-  <p>
-    This is a small public experiment about instruction-following behavior on the open web.
-    The question is simple: if a machine-readable page says "say hi back", how often does that happen?
-  </p>
-  <p>
-    The feed below is observational, not identity proof. A successful <code>hi</code> means follow-through,
-    not guaranteed autonomy.
-  </p>
+- When an agent/crawler scrapes a recipe page,
+- and the recipe page says hi and asks an agent to say "hi back",
+- how often does that happen?
 
-  <h3>Invitation Links</h3>
-  <ul>
-    <li><strong>Start here:</strong> <a href="https://agentspotter-backend-production.up.railway.app/ai/recipe.md" target="_blank" rel="noopener">/ai/recipe.md</a></li>
-    <li><strong>Public canary markdown:</strong> <a href="https://agentspotter-backend-production.up.railway.app/banana-muffins.md" target="_blank" rel="noopener">/banana-muffins.md</a></li>
-    <li><strong>Machine-readable instruction step:</strong> <a href="https://agentspotter-backend-production.up.railway.app/agent.txt" target="_blank" rel="noopener">/agent.txt</a></li>
-  </ul>
+Data below. Please note: A successful hi from "agent" only means there was follow-through, it is not a true guarantee of autonomy.
 
-  <h3>Signal Glossary</h3>
-  <ul>
-    <li><code>resource</code>: a read of invitation pages such as <code>/llms.txt</code>, <code>/ai/recipe.md</code>, or <code>/banana-muffins.md</code></li>
-    <li><code>fetch</code>: a request to <code>/agent.txt</code> (instruction fetch)</li>
-    <li><code>hi_get</code>: lightweight follow-through via <code>GET /hi</code></li>
-    <li><code>hi_post</code>: stronger follow-through via <code>POST /hi</code> without token</li>
-    <li><code>hi_post_token</code>: strongest follow-through in this setup via <code>POST /hi</code> with a valid token</li>
-  </ul>
-
-  <p class="agentspotter-context-link">
-    Full method/context: <a href="https://github.com/sow451/agentspotter/blob/main/context.md" target="_blank" rel="noopener">context.md on GitHub</a>
-  </p>
-</section>
+For full method and context, see <a href="/agentspotter/context/">Agentspotter Context</a>.
 
 <div class="agentspotter-shell">
   <div id="agentspotter-status" class="agentspotter-status" aria-live="polite">Loading latest public events...</div>
@@ -63,43 +39,6 @@ Agentspotter tracks public AI crawler and agent activity. This page reads the pu
 <style>
   .agentspotter-shell {
     margin-top: 1rem;
-  }
-
-  .agentspotter-context {
-    margin: 1rem 0 1.15rem;
-    border: 1px solid var(--border-soft, #efefef);
-    border-radius: 8px;
-    padding: 0.95rem 1rem;
-    background: var(--surface-2, #fafafa);
-  }
-
-  .agentspotter-context h2 {
-    margin-top: 0;
-    margin-bottom: 0.45rem;
-    font-size: 1.15rem;
-  }
-
-  .agentspotter-context h3 {
-    margin: 0.8rem 0 0.3rem;
-    font-size: 1rem;
-  }
-
-  .agentspotter-context p {
-    margin: 0.4rem 0;
-  }
-
-  .agentspotter-context ul {
-    margin: 0.35rem 0 0.5rem 1rem;
-    padding: 0;
-  }
-
-  .agentspotter-context li {
-    margin: 0.22rem 0;
-  }
-
-  .agentspotter-context-link {
-    margin-top: 0.75rem;
-    font-size: 0.92rem;
   }
 
   .agentspotter-status {
