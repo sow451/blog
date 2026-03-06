@@ -57,6 +57,9 @@ class AgentspotterPageTest < Minitest::Test
 
     required_blocks = [
       "Agentspotter tracks public AI crawler and agent activity.",
+      "<h2>Quick Context</h2>",
+      "Signal Glossary",
+      "context.md on GitHub",
       '<div class="agentspotter-shell">',
       'id="agentspotter-status"',
       'id="agentspotter-counters"',
