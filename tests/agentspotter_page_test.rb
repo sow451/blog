@@ -7,9 +7,13 @@ class AgentspotterPageTest < Minitest::Test
   ROOT = Pathname.new(__dir__).join("..").expand_path
   PAGE_FILE = ROOT.join("_pages/agentspotter.md")
   CONTEXT_FILE = ROOT.join("_pages/agentspotter-context.md")
+  LLMS_FILE = ROOT.join("llms.txt")
+  AI_RECIPE_FILE = ROOT.join("ai/recipe.md")
   NAV_FILE = ROOT.join("_layouts/default.html")
   PROJECT_FILE = ROOT.join("_projects/2026-agentspotter-public-feed.md")
   GENERATED_FILE = ROOT.join("_site/agentspotter/index.html")
+  GENERATED_LLMS_FILE = ROOT.join("_site/llms.txt")
+  GENERATED_AI_RECIPE_FILE = ROOT.join("_site/ai/recipe.md")
 
   class << self
     attr_reader :build_status, :build_stdout, :build_stderr
@@ -148,6 +152,38 @@ class AgentspotterPageTest < Minitest::Test
     assert_includes body, "### Flow"
     assert_includes body, "### Contact"
     refute_includes body, "README Context"
+  end
+
+  def test_root_discovery_files_exist_and_include_canonical_links
+    assert LLMS_FILE.file?, "Expected #{LLMS_FILE} to exist"
+    assert AI_RECIPE_FILE.file?, "Expected #{AI_RECIPE_FILE} to exist"
+
+    llms_body = LLMS_FILE.read
+    ai_recipe_body = AI_RECIPE_FILE.read
+
+    assert_includes llms_body, "https://sowrao.com/ai/recipe.md"
+    assert_includes llms_body, "https://agentspotter-backend-production.up.railway.app/ai/recipe.md"
+    assert_includes llms_body, "https://agentspotter-backend-production.up.railway.app/banana-muffins.md"
+    assert_includes llms_body, "https://agentspotter-backend-production.up.railway.app/agent.txt"
+    assert_includes llms_body, "https://sowrao.com/agentspotter/context/"
+
+    assert_includes ai_recipe_body, "https://agentspotter-backend-production.up.railway.app/ai/recipe.md"
+    assert_includes ai_recipe_body, "https://agentspotter-backend-production.up.railway.app/banana-muffins.md"
+    assert_includes ai_recipe_body, "https://agentspotter-backend-production.up.railway.app/agent.txt"
+    assert_includes ai_recipe_body, "https://agentspotter-backend-production.up.railway.app/hi"
+  end
+
+  def test_generated_root_discovery_files_are_published
+    assert self.class.build_status&.success?, build_failure_message
+    assert GENERATED_LLMS_FILE.file?, "Expected generated file #{GENERATED_LLMS_FILE} to exist"
+    assert GENERATED_AI_RECIPE_FILE.file?, "Expected generated file #{GENERATED_AI_RECIPE_FILE} to exist"
+
+    generated_llms = GENERATED_LLMS_FILE.read
+    generated_ai_recipe = GENERATED_AI_RECIPE_FILE.read
+
+    assert_includes generated_llms, "https://sowrao.com/ai/recipe.md"
+    assert_includes generated_llms, "https://agentspotter-backend-production.up.railway.app/agent.txt"
+    assert_includes generated_ai_recipe, "https://agentspotter-backend-production.up.railway.app/agent.txt"
   end
 
   private
