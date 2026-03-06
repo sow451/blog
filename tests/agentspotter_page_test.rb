@@ -58,11 +58,19 @@ class AgentspotterPageTest < Minitest::Test
 
     required_blocks = [
       "Agentspotter tracks public AI crawler and agent activity through a small public experiment.",
-      'Data below. Please note: A successful hi from "agent" only means there was follow-through, it is not a true guarantee of autonomy.',
+      'Data below. Note that a hi from "agent" only means there was follow-through, not a true guarantee of autonomy.',
       '<a href="/agentspotter/context/">Agentspotter Context</a>',
       '<div class="agentspotter-shell">',
       'id="agentspotter-status"',
+      "Global Counters",
+      "agentspotter-card-grid-eight",
+      "Lazy hi (GET /hi)",
+      "V serious hi (POST /hi + token)",
+      "Event Feed",
       'id="agentspotter-counters"',
+      'id="agentspotter-filter-type"',
+      'id="agentspotter-filter-page-size"',
+      'id="agentspotter-filter-order"',
       'id="agentspotter-table-wrap"',
       '<tbody id="agentspotter-table-body"></tbody>'
     ]
@@ -76,14 +84,15 @@ class AgentspotterPageTest < Minitest::Test
     _front_matter, body = parse_markdown_with_front_matter(PAGE_FILE)
 
     assert_match(
-      %r{API_URL\s*=\s*".*/events/public\?type=all&source=all&hide_likely_crawlers=true&limit=25";},
+      %r{API_URL\s*=\s*".*/events/public\?type=all&source=all&hide_likely_crawlers=true&limit=50";},
       body
     )
-    assert_includes body, 'setStatus("Loading latest public events...", false);'
+    assert_includes body, 'setStatus("", false);'
     assert_includes body, 'setStatus("Could not load the public feed right now. Please try again shortly.", true);'
     assert_includes body, "fetch(API_URL"
-    assert_includes body, 'pickFirst(event, ["source_kind", "source", "source_type", "channel", "origin"])'
-    assert_includes body, 'pickFirst(event, ["ts", "occurred_at", "occurredAt", "timestamp", "created_at", "createdAt", "event_time", "time"])'
+    assert_includes body, "renderCards(state.counters);"
+    assert_includes body, "[typeFilterEl, pageSizeEl, orderEl].forEach"
+    assert_includes body, "Loaded \" + numberFormat.format(events.length) + \" matching events."
   end
 
   def test_nav_contains_agentspotter_link
@@ -114,8 +123,9 @@ class AgentspotterPageTest < Minitest::Test
     core_markers = [
       "agentspotter-shell",
       "agentspotter-status",
-      "Loading latest public events...",
-      "/events/public?type=all&source=all&hide_likely_crawlers=true&limit=25",
+      "/events/public?type=all&source=all&hide_likely_crawlers=true&limit=50",
+      "Global Counters",
+      "Event Feed",
       "agentspotter-table-body"
     ]
 

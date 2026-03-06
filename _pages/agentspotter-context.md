@@ -3,7 +3,6 @@ layout: page
 title: Agentspotter Context
 permalink: /agentspotter/context/
 ---
-
 # agent-spotter: context
 
 ## Table of Contents
@@ -28,9 +27,9 @@ This is an observational experiment with explicit limitations. It is not proof o
 
 ### Inspired By
 
-1. https://walzr.com/bop-spotter
-2. https://dri.es/the-third-audience
-3. https://blog.cloudflare.com/introducing-pay-per-crawl/
+1. [bop-spotter](https://walzr.com/bop-spotter)
+2. [The Third Audience](https://dri.es/the-third-audience)
+3. [Cloudflare Pay Per Crawl](https://blog.cloudflare.com/introducing-pay-per-crawl/)
 
 ### Core Hypothesis
 
@@ -241,4 +240,4 @@ After the observation window:
 
 ### Contact
 
-Please contact Sowmya Rao on Twitter: https://x.com/sowmyarao_ or via her blog: https://sowrao.com/
+Please contact Sowmya Rao on Twitter: [Twitter profile](https://x.com/sowmyarao_) or via her blog: [blog URL](https://sowrao.com/)
