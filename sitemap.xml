@@ -1,0 +1,29 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% assign base = "https://sowrao.com" %}
+{% assign docs = site.pages | concat: site.posts | concat: site.projects %}
+{% for doc in docs %}
+  {% if doc.sitemap != false and doc.url != "/sitemap.xml" %}
+  <url>
+    <loc>{{ base }}{{ doc.url }}</loc>
+    <lastmod>{{ doc.date | default: site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  {% endif %}
+{% endfor %}
+  <url>
+    <loc>{{ base }}/llms.txt</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ base }}/ai/recipe.md</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ base }}/banana-muffins.md</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+</urlset>

@@ -52,6 +52,14 @@ Data below. Note that a hi from "agent" only means there was follow-through, not
         <span id="agentspotter-hi-ratio-get-post" class="agentspotter-card-value">-</span>
       </article>
     </div>
+    <p class="agentspotter-discovery-links">
+      Agent discovery links:
+      <a href="/llms.txt">llms.txt</a>
+      <span aria-hidden="true">·</span>
+      <a href="/ai/recipe.md">ai/recipe.md</a>
+      <span aria-hidden="true">·</span>
+      <a href="/banana-muffins.md">banana-muffins.md</a>
+    </p>
   </section>
 
   <section class="agentspotter-section">
@@ -152,6 +160,17 @@ Data below. Note that a hi from "agent" only means there was follow-through, not
     margin: 8px 0 24px;
     font-size: 0.9rem;
     color: var(--text-muted, #666);
+  }
+
+  .agentspotter-discovery-links {
+    margin: 16px 0 0;
+    font-size: 0.9rem;
+    color: var(--text-muted, #666);
+  }
+
+  .agentspotter-discovery-links a {
+    color: inherit;
+    text-decoration: underline;
   }
 
   .agentspotter-card-grid {
