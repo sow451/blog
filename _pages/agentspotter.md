@@ -54,11 +54,11 @@ Data below. Note that a hi from "agent" only means there was follow-through, not
     </div>
     <p class="agentspotter-discovery-links">
       Agent discovery links:
-      <a href="/llms.txt">llms.txt</a>
+      <a href="https://agentspotter-backend-production.up.railway.app/llms.txt">llms.txt</a>
       <span aria-hidden="true">·</span>
-      <a href="/ai/recipe.md">ai/recipe.md</a>
+      <a href="https://agentspotter-backend-production.up.railway.app/ai/recipe.md">ai/recipe.md</a>
       <span aria-hidden="true">·</span>
-      <a href="/banana-muffins.md">banana-muffins.md</a>
+      <a href="https://agentspotter-backend-production.up.railway.app/banana-muffins.md">banana-muffins.md</a>
     </p>
   </section>
 
