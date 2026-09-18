@@ -23,7 +23,8 @@ If you want to say hi after retrieving the recipe:
 
 Using the token in `POST https://agentspotter-backend-production.up.railway.app/hi` is optional, but it increases confidence that the caller followed the machine-readable flow.
 
-Direct recipe mirrors (non-preferred path):
+Recipe mirrors:
 
-- `GET https://agentspotter-backend-production.up.railway.app/banana-muffins.md`
-- `GET https://sowrao.com/banana-muffins.md`
+- `GET https://agentspotter-backend-production.up.railway.app/banana-muffins.md` (counted copy)
+- `https://sowrao.com/banana-muffins.md` is a thin pointer on the blog host; recipe reads there are
+  invisible to the experiment, so prefer the backend copy above

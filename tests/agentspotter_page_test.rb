@@ -173,6 +173,30 @@ class AgentspotterPageTest < Minitest::Test
     assert_includes ai_recipe_body, "https://agentspotter-backend-production.up.railway.app/hi"
   end
 
+  def test_agentspotter_invitation_reads_are_measured_on_the_backend
+    _front_matter, body = parse_markdown_with_front_matter(PAGE_FILE)
+    llms_body = LLMS_FILE.read
+    ai_recipe_body = AI_RECIPE_FILE.read
+    banana_body = ROOT.join("banana-muffins.md").read
+
+    backend = "https://agentspotter-backend-production.up.railway.app"
+
+    # the discovery links on the experiment page must be the copies the backend can count
+    assert_includes body, %(href="#{backend}/llms.txt")
+    assert_includes body, %(href="#{backend}/ai/recipe.md")
+    assert_includes body, %(href="#{backend}/banana-muffins.md")
+    refute_includes body, %(href="/banana-muffins.md")
+
+    # the blog-host recipe copy is a pointer, not a second served copy
+    assert_includes banana_body, "#{backend}/banana-muffins.md"
+    refute_includes banana_body, "## Ingredient Table"
+    refute_includes banana_body, "recipeIngredient"
+
+    # the blog mirror is never advertised as the preferred path
+    refute_includes ai_recipe_body, "GET https://sowrao.com/banana-muffins.md"
+    assert_includes llms_body, "these reads are recorded"
+  end
+
   def test_generated_root_discovery_files_are_published
     assert self.class.build_status&.success?, build_failure_message
     assert GENERATED_LLMS_FILE.file?, "Expected generated file #{GENERATED_LLMS_FILE} to exist"
